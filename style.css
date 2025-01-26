@@ -1,0 +1,161 @@
+/* Color Palette */
+:root {
+    /* Earthy Archaeological Tones */
+    --primary-color: #2C3E50;      /* Deep navy blue */
+    --secondary-color: #34495E;    /* Slate blue */
+    --accent-color: #16A085;       /* Teal green */
+    --background-color: #ECF0F1;   /* Light gray */
+    --text-primary: #2C3E50;       /* Dark blue-gray */
+    --text-secondary: #7F8C8D;     /* Soft gray */
+    
+    /* Additional Archaeological Inspired Colors */
+    --sand-color: #D4C4A8;         /* Archaeological sand tone */
+    --stone-color: #8C7F6F;        /* Stone/artifact color */
+    --terracotta: #A0522D;         /* Terracotta artifact tone */
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  
+    padding: 10px;       /* Optional: adds internal padding */
+}
+
+.image-container {  
+   
+    width: 100%;         /* Full width container */
+    max-width: 1200px;  
+    max-height: fit-content; /* Maximum width */
+    margin-left: auto;   /* Centers the image container */
+    margin-right: auto;  /* Centers the image container */
+}
+
+
+/* CSS Margin Techniques */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-primary);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    background-color: var(--accent-color);
+}
+
+/* Container and Content Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin-top: 20px;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Card Styles */
+.card {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* Image Styles */
+.image-container {
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
